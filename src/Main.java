@@ -22,6 +22,23 @@ public class Main {
         //if statements to determine the winner
         if (playerOne.contentEquals(computer)) {
             System.out.println("Draw!!");
+        } else if (playerOne.equals("rock") && computer.equals("scissors")) {
+            System.out.println("You Won");
+        }else if (playerOne.equals("rock") && computer.equals("paper")) {
+            System.out.println("Computer Won");
+        }
+
+        else if (playerOne.equals("paper") && computer.equals("rock")) {
+            System.out.println("You Won");
+        } else if (playerOne.equals("paper") && computer.equals("scissors")) {
+            System.out.println("Computer Won");
+        }
+
+
+        else if (playerOne.equals("scissors") && computer.equals("paper")) {
+            System.out.println("You Won");
+        } else if (playerOne.equals("scissors") && computer.equals("rock")) {
+            System.out.println("Computer Won");
         } else{
             System.out.println("Invalid Options");
         }
